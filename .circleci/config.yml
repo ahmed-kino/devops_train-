@@ -28,11 +28,11 @@ jobs:
       - checkout
       - setup_remote_docker
       - run:
-        name: Set env variables
-        command: echo 'export VERSION=$(echo $CIRCLE_SHA1 | cut -c -7)' >> $BASH_ENV
+           name: Set env variables
+          command: echo 'export VERSION=$(echo $CIRCLE_SHA1 | cut -c -7)' >> $BASH_ENV
       - run:
-        name: run deploy.sh
-        command: ./deploy.sh
+          name: run deploy.sh
+          command: ./deploy.sh
 
 workflows:
   version: 2
