@@ -21,7 +21,7 @@ jobs:
       - run:
           name: Docker push devops image
           command: docker push $DOCKER_USER/devops
-   deploy:
+  deploy:
     docker:
       - image: circleci/node:8
     steps:
