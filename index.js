@@ -8,6 +8,6 @@ app.get('/', (req, res) => {
 	res.json(data)
 });
 
-app.listen(3001, () => {
-  console.log("Hey man 3001")
+app.listen(9000, () => {
+  console.log("Hey man 9000")
 })
